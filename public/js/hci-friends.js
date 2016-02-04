@@ -5,6 +5,14 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$('#name-link').click(changeName)
+	    	
+function changeName(event){
+	console.log("clicked");
+	var newText = $(this).text();
+	$('#name-link').text(anagrammedName(newText));
+}
+
 /*
  * Function that is called when the document is ready.
  */
